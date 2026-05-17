@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
+  
+  --color-primary: #FFD016;
+  --color-primary-hover: #e5b90f;
+  --color-dark: #222222;
+  --color-dark-lighter: rgba(255, 255, 255, 0.03);
+  --color-light: #ffffff;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.hero-text {
+  font-family: var(--font-display);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-hover);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(var(--color-primary) 1px, transparent 1px);
+  background-size: 10px 10px;
+}

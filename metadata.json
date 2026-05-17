@@ -1,0 +1,6 @@
+{
+  "name": "MyGym Olsztyn",
+  "description": "Nowoczesny klub sportowy Fitness w Olsztynie. Siłownia, Karnety, Treningi personalne.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
